@@ -2,6 +2,51 @@
 <html lang="en">
 
 <head>
+  <style>
+/* --- LEVEL GRAPH SKILL BAR CSS --- */
+.progress-bar-wrap {
+  position: relative;
+  background: #e8e8e8;
+  height: 18px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #2ebf91, #8360c3);
+  border-radius: 12px 0 0 12px;
+  transition: width 0.7s ease;
+}
+
+.level-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.level-lines span {
+  width: 2px;
+  background: rgba(0,0,0,0.18);
+  border-radius: 2px;
+}
+
+.skill {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+</style>
+
+
+
+  
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width,initial-scale=1" name="viewport">
